@@ -1,0 +1,9 @@
+{% if lista_encuestas %}
+    <ul>
+    {% for encuesta in lista_encuestas %}
+        <li><a href="{% url 'encuestas:detalles' encuesta.id %}">{{ encuesta.pregunta }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No se encontraron encuestas!</p>
+{% endif %}

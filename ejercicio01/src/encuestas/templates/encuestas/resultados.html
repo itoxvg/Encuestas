@@ -1,0 +1,7 @@
+<h1>{{encuesta.pregunta}}</h1>
+<ul>
+    {% for eleccion in encuesta.eleccion_set.all %}
+        <li>{{eleccion.texto}} -- {{eleccion.votos}}</li>
+    {% endfor%}
+</ul>
+<a href="{% url 'encuestas:detalles' encuesta.id %}">Votar de nuevo?</a>
