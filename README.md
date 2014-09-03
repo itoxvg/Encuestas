@@ -1,4 +1,4 @@
-#Este tutorial viene en la pagina oficial de django
+#Este tutorial viene en la pagina oficial de django 1.6
 
 http://django.es/docs/intro/tutorial01/
 
